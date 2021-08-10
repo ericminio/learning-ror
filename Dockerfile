@@ -2,8 +2,9 @@ FROM ruby:3.0.2-buster
 
 RUN apt-get update && \
     apt-get install -y \
-        build-essential libssl-dev curl git vim \
-        sqlite
+        build-essential libssl-dev \
+        curl git vim \
+        firefox-esr
 
 RUN echo "PS1='\n\[\e[32m\]\u \[\e[33m\]in \w\[\e[0m\] \n> '" >> ~/.bashrc
 
